@@ -9,11 +9,10 @@
 
 **XCDYouTubeKit** is a YouTube video player for iOS, tvOS and macOS.
 
-<img src="Screenshots/XCDYouTubeVideoPlayerViewController.png" width="480" height="320">
+## Note from Sn0wCh1ld
+Honestly, I wouldn't use this if I were you. The API this library is based on has been deprecated since iOS 9. Before using this, please check the [original repo](https://github.com/0xced/XCDYouTubeKit) to see if it has been updated to use the more modern AVPlayerViewController rather than MPMoviePlayerViewController (or something even newer that hasn't been released as of the writing of this note.
 
-Are you enjoying XCDYouTubeKit? You can say thank you with [a tweet](https://twitter.com/intent/tweet?text=%400xced%20Thank%20you%20for%20XCDYouTubeKit%2E). I am also accepting donations. ;-)
-
-[![Donate button](https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif)](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=MGEPRSNQFMV3W)
+As of this writing (March 17th, 2018), the only difference between this fork and the original library is that this one allows you to load videos via NSURL (including local files), rather than needlessly restricting it to YouTube.
 
 ## Requirements
 
@@ -27,18 +26,12 @@ XCDYouTubeKit is against the YouTube [Terms of Service](https://www.youtube.com/
 
 ## Installation
 
-XCDYouTubeKit is available through CocoaPods and Carthage.
+This fork of XCDYouTubeKit is available through CocoaPods.
 
 CocoaPods:
 
 ```ruby
-pod "XCDYouTubeKit", "~> 2.5"
-```
-
-Carthage:
-
-```objc
-github "0xced/XCDYouTubeKit" ~> 2.5
+pod 'XCDYouTubeKit', :git => 'https://github.com/Sn0wCh1ld/XCDYouTubeKit.git'
 ```
 
 Alternatively, you can manually use the provided static library or dynamic framework. In order to use the static library, you must:
