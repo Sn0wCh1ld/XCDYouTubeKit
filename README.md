@@ -10,7 +10,7 @@
 **XCDYouTubeKit** is a YouTube video player for iOS, tvOS and macOS.
 
 ## Note from Sn0wCh1ld
-Honestly, I wouldn't use this if I were you. The API this library is based on has been deprecated since iOS 9. Before using this, please check the [original repo](https://github.com/0xced/XCDYouTubeKit) to see if it has been updated to use the more modern AVPlayerViewController rather than MPMoviePlayerViewController (or something even newer that hasn't been released as of the writing of this note.
+Honestly, I wouldn't use this if I were you. The API this library is based on has been deprecated since iOS 9. Before using this, please check the [original repo](https://github.com/0xced/XCDYouTubeKit) to see if it has been updated to use the more modern AVPlayerViewController rather than MPMoviePlayerViewController (or something even newer that hasn't been released as of the writing of this note).
 
 As of this writing (March 17th, 2018), the only difference between this fork and the original library is that this one allows you to load videos via NSURL (including local files), rather than needlessly restricting it to YouTube.
 
